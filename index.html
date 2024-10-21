@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your webpage">
+    <title>Kyoto Machiyas (fake)</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <img id="bg" src="static/bg.jpg">
+    <img id="bg_small" src="static/bg_small.jpg">
+    <header>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.7/libs/oversea/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: '7427834016747241479',
+          },
+          componentProps: {
+            title: 'Kyoto Machiya Collection',
+          },
+        });
+    </script>
+</body>
+</html>
