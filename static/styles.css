@@ -1,0 +1,20 @@
+#bg {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+
+#bg_small {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #bg {
+        display: none;
+    }
+    #bg_small {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+}
