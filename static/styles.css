@@ -21,6 +21,7 @@
 
 #chatbot-box {
     position: fixed;
+    display: flex;
     bottom: 20px;
     right: 20px;
     width: 400px;
@@ -32,7 +33,7 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 
-#chatbot-box.hidden {
+#chatbot-box.bpClose {
     display: none;
     box-shadow: none; /* Remove shadow when hidden */
 }
