@@ -19,7 +19,9 @@
     }
 }
 
-#chatbot-box {
+/* For normal effect
+ */
+/* #chatbot-box {
     position: fixed;
     display: flex;
     bottom: 20px;
@@ -29,11 +31,34 @@
     z-index: 1000;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Visible shadow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
 }
 
 #chatbot-box.bpClose {
     display: none;
+    box-shadow: none;
+} */
+
+/* For cool Fade in/out effect
+ */
+#chatbot-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Visible shadow */
+    transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1; /* Make sure the chatbot is fully visible initially */
+}
+
+#chatbot-box.bpClose {
+    opacity: 0; /* Fade out instead of hiding */
+    pointer-events: none; /* Prevent interactions while closed */
     box-shadow: none; /* Remove shadow when hidden */
 }
+
