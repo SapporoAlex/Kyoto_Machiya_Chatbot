@@ -28,7 +28,6 @@
     z-index: 1000;
     border-radius: 10px;
     overflow: hidden;
-    display: none;  /* Initially hidden */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Visible shadow */
     transition: box-shadow 0.3s ease-in-out;
 }
