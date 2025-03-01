@@ -19,14 +19,50 @@
     <footer>
     </footer>
 
-    
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/03/01/03/20250301034908-DECTWNH0.js"></script>
+    <div class="webchat" style="height: 600px; width: 400px;">
+  <iframe
+    style="height: 100%; width: 100%; border: none;"
+    srcdoc='
+    <!doctype html>
+    <html lang="en">
+      <head></head>
+      <body>
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script defer>
+          window.botpress.on("webchat:ready", (conversationId) => {
+            botpress.open();
+          });
+          <!-- REPLACED -->
+            window.botpress.init({
+              "botId": "02c600d7-2562-4f38-a59a-c8625e02285a",
+              "configuration": {
+                "botName": "Kyoto Machiya Support",
+                "botAvatar": "https://files.bpcontent.cloud/2025/03/01/04/20250301040006-E43QV13P.png",
+                "botDescription": "Kyoto Machiya Support can handle customer inquiries related to Kyoto Machiya Hotels and their services and facilities.",
+                "website": {},
+                "email": {},
+                "phone": {},
+                "termsOfService": {},
+                "privacyPolicy": {},
+                "color": "#b08f1c",
+                "variant": "solid",
+                "themeMode": "light",
+                "fontFamily": "inter",
+                "radius": 1
+              },
+              "clientId": "80bfdb69-7742-4114-9898-8071c8eaba7d"
+            });
+          <!-- REPLACED ABOVE -->
+        </script>
+      </body>
+    </html>'
+  ></iframe>
+</div>
     
 <!-- 
     <script src="script.js"></script>
     <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.7/libs/oversea/index.js"></script> -->
-    
+<!--     
     <script>
         new CozeWebSDK.WebChatClient({
           config: {
@@ -36,6 +72,6 @@
             title: 'Kyoto Machiya Collection',
           },
         });
-    </script>
+    </script> -->
 </body>
 </html>
