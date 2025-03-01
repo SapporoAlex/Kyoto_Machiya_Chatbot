@@ -56,7 +56,7 @@
     opacity: 1; /* Make sure the chatbot is fully visible initially */
 }
 
-.bpReset {
+.bpClose {
     opacity: 0; /* Fade out instead of hiding */
     pointer-events: none; /* Prevent interactions while closed */
     box-shadow: none; /* Remove shadow when hidden */
